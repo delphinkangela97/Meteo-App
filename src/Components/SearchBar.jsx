@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const SearchBar = ({ fetchWeather }) => {
   const [city, setCity] = useState("");
@@ -12,20 +12,22 @@ const SearchBar = ({ fetchWeather }) => {
   };
 
   return (
-    <form className="flex" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Enter city name"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-       className="flex-1 p-2 border border-gray-300 rounded-l-lg outline-none border-r-0 bg-black"
-      />
-      <button
-        className="bg-blue-500 border cursor-pointer p-3 hover:bg-blue-600 border-l-0 rounded-r-lg"
-        type="submit"
-      >
-        Search
-      </button>
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+      <div className="flex gap-2">
+        <input
+          type="text"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="Enter city name..."
+          className="flex-1 p-3 rounded-lg bg-white/90 text-gray-800 placeholder-black-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          type="submit"
+          className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Search
+        </button>
+      </div>
     </form>
   );
 };
