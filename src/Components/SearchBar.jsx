@@ -19,7 +19,7 @@ const SearchBar = ({ fetchWeather }) => {
           value={city}
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city name..."
-          className="flex-1 p-3 rounded-lg bg-white/90 text-gray-800 placeholder-black-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 p-3 rounded-lg bg-white/90 text-gray-800 placeholder--500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           type="submit"
