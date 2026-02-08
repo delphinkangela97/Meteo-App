@@ -39,7 +39,7 @@ const Header = ({ fetchWeather }) => {
             <div className="flex items-center">
               <div className="text-3xl">⛅</div>
               <div className="ml-2">
-                <h1 className="text-xl font-bold text-white">WeatherPro</h1>
+                <h1 className="text-xl font-bold text-white">Bwenge Tech</h1>
                 <p className="text-xs text-blue-200">Real-time Forecast</p>
               </div>
             </div>
@@ -59,9 +59,9 @@ const Header = ({ fetchWeather }) => {
                 <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-300" />
                 <button
                   type="submit"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded-lg text-sm transition-colors"
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 px-4 py-1 rounded-lg text-sm transition-colors text-white"
                 >
-                  Go
+                  Search
                 </button>
               </div>
             </form>
@@ -101,7 +101,7 @@ const Header = ({ fetchWeather }) => {
               </div>
             </div>
             <button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 px-4 py-2 rounded-xl text-white font-semibold transition-all shadow-lg hover:shadow-blue-500/25">
-              Settings
+              Contact
             </button>
           </nav>
 
